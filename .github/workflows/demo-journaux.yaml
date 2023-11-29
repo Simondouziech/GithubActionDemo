@@ -8,6 +8,7 @@ jobs:
       - run: echo "Premier Job"
       - run: echo "Fin 1 "
   Deuxieme-Job:
+    needs: Premier-Job
     name : Deuxieme-Job
     runs-on : Ubuntu-latest
     steps:
